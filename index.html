@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body class="flex-column-center">
+    <main class="main-container flex-column-center">
+      <section class="first-section">
+        <div class="first-section__items-container flex-column-center">
+          <img
+            class="first-section__logo"
+            src="./images/logo.svg"
+            alt="Fylo Logo"
+          />
+          <div class="first-section__options-container flex-row-center">
+            <div class="first-section__option-container">
+              <img
+                class="first-section__option"
+                id="document"
+                src="./images/icon-document.svg"
+                alt="document icon"
+              />
+            </div>
+            <div class="first-section__option-container">
+              <img
+                class="first-section-option"
+                id="folder"
+                src="./images/icon-folder.svg"
+                alt="folder icon"
+              />
+            </div>
+            <div class="first-section__option-container">
+              <img
+                class="first-section-option"
+                id="upload"
+                src="./images/icon-upload.svg"
+                alt="upload to cloud server"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second-section">
+        <div class="second-section__storage-info">
+          <p id="storage-used">You’ve used <span>815 GB</span> of your storage</p>
+          <input 
+            type="range" 
+            min="0" 
+            max="1000" 
+            value="815" 
+            step="1">
+          </input>
+          <div class="second-section__min-max-storage flex-row-center">
+            <p id="min">0 GB</p>
+            <p id="max">1000 GB</p>
+          </div>
+          <div class="second-section__storage-left flex-row-center">
+            <p id="number">185</p>
+            <p id="description">gb left</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Arfirpo"
+        >Agustín R. Firpo</a
+      >.
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
