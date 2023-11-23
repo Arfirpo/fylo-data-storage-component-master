@@ -52,14 +52,16 @@
       <section class="second-section">
         <div class="second-section__storage-info">
           <p id="storage-used">You’ve used <span id="storage-used-number">815 GB</span> of your storage</p>
-          <input 
-            id="progress-bar"
-            type="range" 
-            min="0" 
-            max="1000" 
-            value="815" 
-            step="1">
-          </input>
+          <div class="second-section__range-bar-container">
+            <input
+              id="progress-bar"
+              type="range"
+              min="0"
+              max="1000"
+              value="815"
+              step="1">
+            </input>
+          </div>
           <div class="second-section__min-max-storage flex-row-center">
             <p id="min">0 GB</p>
             <p id="max">1000 GB</p>

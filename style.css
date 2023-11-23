@@ -83,6 +83,12 @@ body {
   min-width: 226px;
 }
 
+/*CONTENEDOR DE LA BARRA DE RANGO*/
+.second-section__range-bar-container{
+  width: 100%;
+  height: 16px;
+}
+
 /*  BARRA DE RANGO  */
 input[type="range"] {
   appearance: none;
@@ -97,7 +103,7 @@ input[type="range"] {
   transition: opacity 0.2s;
   margin: 15px 0 10px;
 }
-
+/*BOTON DESLIZABLE*/
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -108,13 +114,13 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
+/*BARRA DESLIZABLE*/
 input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 100%;
   cursor: pointer;
   background: var(--ratioGradient);
   border-radius: 50px;
-  border: 1px solid #000000;
 }
 
 /*  MINIMO Y MAXIMO DE CAPACIDAD  */
