@@ -1,8 +1,8 @@
 :root {
-  --ratioGradient: linear-gradient(
-    to right,
-    hsl(6, 100%, 80%),
-    hsl(335, 100%, 65%)
+  --rangeGradient: -webkit-linear-gradient(
+    180deg,
+    hsl(6, 100%, 80%) 50%,
+    hsl(335, 100%, 65%) 50%
   );
   --paleBlue: hsl(243, 100%, 93%);
   --grayishBlue: hsl(229, 7%, 55%);
