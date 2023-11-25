@@ -26,6 +26,7 @@ body {
 .second-section {
   background: var(--darkBlue);
   width: 100%;
+  max-width: 21.875rem;
   padding: 40px 0 40px 40px;
 }
 .first-section {
@@ -65,6 +66,8 @@ body {
 /*  CONTENEDOR SEGUNDA SECCIÓN  */
 .second-section {
   background: var(--darkBlue);
+  width: 100%;
+  max-width: 34rem;
   padding: 30px 26px;
   text-align: center;
   border-radius: 10px;
@@ -87,6 +90,7 @@ body {
 .second-section__range-bar-container {
   border: 1px solid #000;
   margin: 10px auto;
+  width: 100%;
   height: 14.2px;
   border-radius: 50px;
   outline: none;
@@ -156,4 +160,63 @@ input[type="range"]::-webkit-slider-thumb {
 
 .attribution a {
   color: hsl(95, 45%, 44%);
+}
+
+/*DESKTOP LAYOUT*/
+
+@media (min-width:1200px) {
+  body{
+    background: var(--veryDarkBlue) url(./images/bg-desktop.png) no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+  /*  CONTENEDOR PRINCIPAL  */
+  .main-container{
+    min-width: 1200px;
+    height: 204px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: end;
+    gap: 30px;
+  }
+  /*  PRIMERA SECCION  */
+  .first-section__items-container{
+    align-items: left;
+  }
+  .first-section__options-container{
+    align-items: left;
+    justify-content:unset;
+    column-gap: 15px;
+  }
+  /*  SEGUNDA SECCION  */
+  #storage-used{
+    text-align-last: left;
+  }
+  .second-section__storage-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .second-section__storage-left{
+    width: 36%;
+    height: 40%;
+    bottom: unset;
+    left: unset;
+    top: -40px;
+    right: 24px;
+    border-bottom-right-radius: 10%;
+  }
+  .second-section__storage-left::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-right: 18px solid white;
+    border-bottom: 14px solid transparent;
+    position: absolute;
+    bottom: -14px;
+    right: 0;  
+  }
 }
