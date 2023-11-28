@@ -3,7 +3,7 @@
 @import "./reset.css";
 
 body {
-  width: 100%;
+  min-width: 100%;
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -14,10 +14,10 @@ body {
 
 /*  CONTENEDOR PRINCIPAL  */
 .main-container {
-  min-width: 330px;
+  min-width: 20.625rem;
   height: 60%;
   /* border: 1px solid #c61b1b; */
-  gap: 15px;
+  gap: 0.9375rem;
   position: relative;
 }
 
@@ -27,11 +27,11 @@ body {
   background: var(--darkBlue);
   width: 100%;
   max-width: 21.875rem;
-  padding: 40px 0 40px 40px;
+  padding: 2.5rem 0 2.5rem 2.5rem;
 }
 .first-section {
-  border-radius: 10px 100px 10px 10px;
-  height: 200px;
+  border-radius: 0.625rem 6.25rem 0.625rem 0.625rem;
+  height: 12.5rem;
 }
 
 /*CONTENEDOR GENERAL DEL LOGO Y LOS ICONOS*/
@@ -46,7 +46,7 @@ body {
 
 /*  CONTENEDOR DE TODOS LOS ICONOS  */
 .first-section__options-container {
-  min-width: 170px;
+  min-width: 10.625rem;
   width: 100%;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -55,11 +55,11 @@ body {
   /*CONTENEDOR INDIVIDUAL DE ICONOS*/
   .first-section__option-container {
     background: black;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     display: grid;
     place-items: center;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 }
 
@@ -68,13 +68,13 @@ body {
   background: var(--darkBlue);
   width: 100%;
   max-width: 34rem;
-  padding: 30px 26px;
+  padding: 1.875rem 1.625rem;
   text-align: center;
-  border-radius: 10px;
-  height: 165px;
+  border-radius: 0.625rem;
+  height: 10.3125rem;
   position: relative;
   & #storage-used {
-    font-size: 12px;
+    font-size: 0.75rem;
     opacity: 0.7;
   }
   & span {
@@ -83,16 +83,16 @@ body {
 }
 
 .second-section__storage-info {
-  min-width: 226px;
+  min-width: 14.125rem;
 }
 
 /*CONTENEDOR DE LA BARRA DE RANGO*/
 .second-section__range-bar-container {
-  border: 1px solid #000;
-  margin: 10px auto;
+  border: 0.0625rem solid #000;
+  margin: 0.625rem auto;
   width: 100%;
-  height: 14.2px;
-  border-radius: 50px;
+  height: 0.8875rem;
+  border-radius: 3.125rem;
   outline: none;
   border: none;
 }
@@ -101,7 +101,7 @@ input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background: var(--veryDarkBlue);
   outline: none;
   overflow: hidden;
@@ -109,12 +109,12 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   border-radius: 50%;
-  outline: 3px solid hsl(335, 100%, 65%);
+  outline: 0.1875rem solid hsl(335, 100%, 65%);
   background: var(--white);
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 /*  MINIMO Y MAXIMO DE CAPACIDAD  */
@@ -130,12 +130,12 @@ input[type="range"]::-webkit-slider-thumb {
   height: 46%;
   background: var(--white);
   position: absolute;
-  bottom: -36px;
+  bottom: -2.25rem;
   left: 0;
   right: 0;
   margin: 0 auto;
-  border-radius: 10px;
-  padding: 15px 10px;
+  border-radius: 0.625rem;
+  padding: 0.9375rem 0.625rem;
   justify-content: space-evenly;
   color: var(--veryDarkBlue);
   font-weight: bold;
@@ -152,10 +152,10 @@ input[type="range"]::-webkit-slider-thumb {
 /*  FOOTER  */
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 0.625rem;
 }
 
 .attribution a {
@@ -164,59 +164,62 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*DESKTOP LAYOUT*/
 
-@media (min-width:1200px) {
-  body{
+@media (min-width: 75rem) {
+  body {
     background: var(--veryDarkBlue) url(./images/bg-desktop.png) no-repeat;
     background-size: contain;
     background-position: bottom center;
   }
   /*  CONTENEDOR PRINCIPAL  */
-  .main-container{
-    min-width: 1200px;
-    height: 204px;
+  .main-container {
+    min-width: 75rem;
+    height: 17.75rem;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: end;
-    gap: 30px;
+    gap: 1.875rem;
   }
   /*  PRIMERA SECCION  */
-  .first-section__items-container{
+  .first-section__items-container {
     align-items: left;
   }
-  .first-section__options-container{
+  .first-section__options-container {
     align-items: left;
-    justify-content:unset;
-    column-gap: 15px;
+    justify-content: unset;
+    column-gap: 0.9375rem;
   }
   /*  SEGUNDA SECCION  */
-  #storage-used{
-    text-align-last: left;
+  .second-section {
+    & #storage-used {
+      text-align: left;
+      font-size: 1rem;
+    }
   }
-  .second-section__storage-info{
+  .second-section__storage-info {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .second-section__storage-left{
+  .second-section__storage-left {
     width: 36%;
     height: 40%;
     bottom: unset;
     left: unset;
-    top: -40px;
-    right: 24px;
+    top: -2.5rem;
+    right: 1.5rem;
     border-bottom-right-radius: 10%;
   }
-  .second-section__storage-left::after{
+  .second-section__storage-left::after {
     content: "";
     width: 0;
     height: 0;
-    border-top: 14px solid transparent;
-    border-right: 18px solid white;
-    border-bottom: 14px solid transparent;
+    border-top: 0.875rem solid transparent;
+    border-right: 1.125rem solid white;
+    border-bottom: 0.875rem solid transparent;
     position: absolute;
-    bottom: -14px;
-    right: 0;  
+    bottom: -0.875rem;
+    right: 0;
   }
 }
