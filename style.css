@@ -173,7 +173,7 @@ input[type="range"]::-webkit-slider-thumb {
   /*  CONTENEDOR PRINCIPAL  */
   .main-container {
     min-width: 75rem;
-    height: 17.75rem;
+    height: 9.75rem;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: end;
